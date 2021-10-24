@@ -11,7 +11,7 @@
     "w p e g"
     "w p b .";
     
-    .white {
+    &__photo {
         // background-color: #fff;
         grid-area: w;
         margin-right: 20px;
@@ -20,7 +20,7 @@
         }
         
     }
-    .orange {
+    &__general {
         // background-color: orange;
         grid-area: o;
         position: relative;
@@ -30,14 +30,14 @@
         }
         
     }
-    .red {
+    &__web {
         // background-color: red;
         grid-area: e;
         padding-left: 50px;
         
  
     }
-    .green {
+    &__develomper {
         // background-color: green;
         grid-area: g;
         padding-left: 60px;
@@ -45,7 +45,7 @@
         
         
     }
-    .blue {
+    &__uiux {
         // background-color: blue;
         grid-area: b;
         padding-left: 50px;
@@ -63,7 +63,7 @@
         position: relative;
         z-index: 2;
         @include circle_about_me;
-        .web {
+        .icon {
             position: absolute;
             top: 15px;
             left: 15px;
