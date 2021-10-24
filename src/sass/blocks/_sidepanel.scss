@@ -1,0 +1,38 @@
+.sidepanel {
+    position: fixed;
+    top: 230px;
+    left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 340px;
+    z-index: 3;
+    &__divider {
+        width: 2px;
+        height: 70px;
+        background-color: #000;
+    }
+    &__text {
+        height: 150px; // разворот по вертикаль блока с соц сетью
+        width: 25px; // сам текст необходимо поместить в span
+        span { // и уже span повернуть и сместить
+            display: block;
+            width: 150px;
+            transform: rotate(-90deg) translate(-30%, -260%); 
+                       
+        }
+    }
+    &__link {
+        &:hover {
+            transform: scale(1.5);
+            svg path {
+                fill: $main-color;
+                
+            }
+        }
+        
+    }
+    
+
+}
