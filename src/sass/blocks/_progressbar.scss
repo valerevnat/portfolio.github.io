@@ -2,10 +2,11 @@
     padding-top: 120px;
     display: grid;
     grid-template: repeat(2, minmax(70px, auto))/repeat(3, minmax(350px, auto));
-    gap: 13px;
+    gap: 30px 45px;
     &__skills {
         position: relative;
         &-item {
+            margin-top: 27px;
             position: relative;
             background-color: #E8E4DE;
             height: 14px;
@@ -20,6 +21,19 @@
                 left: 0;
                 
             }    
+        }
+        &-percent {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        &-title {
+            position: relative;
+            @include before_circle;
+            &:before {
+                left: -4%;
+            }
+            
         }
     }
 }
