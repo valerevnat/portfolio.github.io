@@ -1,0 +1,30 @@
+.progressbar {
+    position: relative;
+    padding-top: 120px;
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    gap: 30px 45px;
+
+    &__skills {
+        position: relative;
+        &-item {
+            position: absolute;
+            width: 350px;
+            height: 14px;
+            background: #E8E4DE;
+            border-radius: 4px;
+        }
+        &-orange {
+            position: absolute;
+            background-color: orange;
+            // width: 40%;
+            height: 14px;
+            border-radius: 4px;
+        }
+
+
+    }
+
+}
+
+

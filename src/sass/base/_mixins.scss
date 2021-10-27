@@ -11,31 +11,3 @@
         background: $main-color;
     }
 }
-
-@mixin circle_about_me {
-    &:before {
-        content: '';
-        position: absolute;
-        z-index: -1;
-        top: 0;
-        left: 0px;
-        width: 36px;
-        height: 36px;
-        border-radius: 100%;
-        background: $main-color;
-    }
-}
-
-@mixin circle_me_title {
-    &:before {
-        content: '';
-        position: absolute;
-        z-index: -1;
-        top: -2%;
-        left: 0;
-        width: 36px;
-        height: 36px;
-        border-radius: 100%;
-        background: $main-color;
-    }
-}
